@@ -130,8 +130,7 @@ export default defineConfig({
                 },
             ],
             lastUpdated: true,
-        }
-        ),
+        }),
         svelte(),
         react(),
     ],
