@@ -6,8 +6,6 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-22.04
-    environment:
-      name: protected
     strategy:
       matrix:
         node-version: [22]
