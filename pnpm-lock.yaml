@@ -35,6 +35,9 @@ importers:
       sharp:
         specifier: ^0.34.4
         version: 0.34.4
+      starlight-image-zoom:
+        specifier: ^0.13.1
+        version: 0.13.1(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1)))
       starlight-theme-nova:
         specifier: ^0.9.5
         version: 0.9.5(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1)))(typescript@5.9.3)
@@ -3129,6 +3132,12 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
+
+  starlight-image-zoom@0.13.1:
+    resolution: {integrity: sha512-lzSAymjOnI8Ny8NnSjmOEKLp+KaHYDMyKeK4VX0WhwbA3bZ1V13mmjUJ0Mwi+EiqA885rUnoDhPAPrCbgqqNEg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.32.0'
 
   starlight-theme-nova@0.9.5:
     resolution: {integrity: sha512-wI+g9gnNw+nkJkC+4q+k/9B/IfPiQLUvci6vJfscqc1CjBtjs0DFRSsHGe0DrFm7CGHlrUBXKbMI+WIOPN6MMw==}
@@ -7494,6 +7503,16 @@ snapshots:
   source-map@0.7.6: {}
 
   space-separated-tokens@2.0.2: {}
+
+  starlight-image-zoom@0.13.1(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1))):
+    dependencies:
+      '@astrojs/starlight': 0.36.0(astro@5.14.1(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1))
+      mdast-util-mdx-jsx: 3.2.0
+      rehype-raw: 7.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
+    transitivePeerDependencies:
+      - supports-color
 
   starlight-theme-nova@0.9.5(@astrojs/starlight@0.36.0(astro@5.14.1(@types/node@24.6.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.3)(typescript@5.9.3)(yaml@2.8.1)))(typescript@5.9.3):
     dependencies:

@@ -1,5 +1,6 @@
 ---
 import StarlightHead from "@astrojs/starlight/components/Head.astro";
+import ImageZoom from "starlight-image-zoom/components/ImageZoom.astro";
 
 const { entry } = Astro.props;
 const title = entry?.data?.title || "Pycord Guide";
@@ -10,6 +11,7 @@ const ogImageURL = new URL("/logo.webp", Astro.site);
 ---
 
 <StarlightHead {...Astro.props} />
+<ImageZoom />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />

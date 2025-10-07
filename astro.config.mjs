@@ -2,6 +2,7 @@
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import starlightImageZoom from "starlight-image-zoom";
 import starlightThemeNova from "starlight-theme-nova";
 
 import react from "@astrojs/react";
@@ -129,7 +130,7 @@ export default defineConfig({
                     ],
                 },
             ],
-            plugins: [starlightThemeNova()],
+            plugins: [starlightThemeNova(), starlightImageZoom()],
         }),
         svelte(),
         react(),
