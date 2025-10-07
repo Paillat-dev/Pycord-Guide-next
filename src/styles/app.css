@@ -14,6 +14,7 @@
     --font-display: "Saira";
     --font-sans: "Geist";
     --font-mono: "Jetbrains Mono";
+    --font-discord: "Whitney", sans-serif;
 
     --color-blurple: #5865f2;
     --color-light-blurple: #e0e3ff;
@@ -42,32 +43,29 @@
 }
 
 @layer components {
+    .blurple-btn,
+    .grey-btn,
+    .red-btn,
+    .green-btn {
+        padding: 0.3rem 0.8rem;
+        border-radius: var(--radius-lg);
+        @apply font-discord text-sm hover:brightness-85;
+    }
+
     .blurple-btn {
-        background-color: var(--color-blurple) !important;
-        padding: 0.3rem 0.8rem !important;
-        border-radius: var(--radius-lg) !important;
-        @apply text-sm hover:brightness-85;
+        background-color: var(--color-blurple);
     }
 
     .grey-btn {
-        background-color: var(--color-grey) !important;
-        padding: 0.3rem 0.8rem !important;
-        border-radius: var(--radius-lg) !important;
-        @apply text-sm hover:brightness-85;
+        background-color: var(--color-grey);
     }
 
     .red-btn {
-        background-color: var(--color-discord-red) !important;
-        padding: 0.3rem 0.8rem !important;
-        border-radius: var(--radius-lg) !important;
-        @apply text-sm hover:brightness-85;
+        background-color: var(--color-discord-red);
     }
 
     .green-btn {
-        background-color: var(--color-discord-green) !important;
-        padding: 0.3rem 0.8rem !important;
-        border-radius: var(--radius-lg) !important;
-        @apply text-sm hover:brightness-85;
+        background-color: var(--color-discord-green);
     }
 }
 
@@ -78,9 +76,9 @@
         @apply transition-all duration-200;
     }
 
-    img {
-        border: 1px solid var(--color-gray-600) !important;
-        border-radius: var(--radius-lg) !important;
+    img[data-image-component] {
+        border: 1px solid var(--color-gray-600);
+        border-radius: var(--radius-lg);
     }
 
     .site-title {
@@ -109,8 +107,8 @@
 
     div[class*="hero"] img,
     img[alt="Pycord Logo"] {
-        border: none !important;
-        border-radius: 0 !important;
+        border: none;
+        border-radius: 0;
     }
 
     @keyframes gradient {
