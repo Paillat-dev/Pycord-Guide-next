@@ -49,7 +49,7 @@
     .green-btn {
         padding: 0.3rem 0.8rem;
         border-radius: var(--radius-lg);
-        @apply font-discord text-sm hover:brightness-85;
+        @apply font-discord cursor-default text-sm !text-white !transition-all !duration-200 hover:brightness-90;
     }
 
     .blurple-btn {
