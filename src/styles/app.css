@@ -76,7 +76,7 @@
         @apply transition-all duration-200;
     }
 
-    img[data-image-component] {
+    img[loading="lazy"] {
         border: 1px solid var(--color-gray-600);
         border-radius: var(--radius-lg);
     }
@@ -103,12 +103,6 @@
 
     a[class*="site-title"] span {
         @apply text-xl md:text-2xl;
-    }
-
-    div[class*="hero"] img,
-    img[alt="Pycord Logo"] {
-        border: none;
-        border-radius: 0;
     }
 
     @keyframes gradient {
